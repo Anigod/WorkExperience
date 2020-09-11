@@ -1,0 +1,39 @@
+/*
+下滑后整体从上到下的过渡效果
+*/
+.rotateX-next-leave-active {
+    animation: next-out 1s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-animation: next-out 1s cubic-bezier(0.4, 0, 1, 1);
+}
+
+@keyframes next-out {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+
+    to {
+        top: -100%;
+        opacity: 0;
+    }
+}
+
+/*
+下滑后整体从上到下的过渡效果
+*/
+.rotateX-last-leave-active {
+    animation: last-out 1s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-animation: last-out 1s cubic-bezier(0.4, 0, 1, 1);
+}
+
+@keyframes last-out {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+
+    to {
+        top: 100%;
+        opacity: 0;
+    }
+}
